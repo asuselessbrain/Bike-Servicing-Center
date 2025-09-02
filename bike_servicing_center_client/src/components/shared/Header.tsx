@@ -5,7 +5,7 @@ import { CiHeart, CiShoppingCart, CiUser } from "react-icons/ci";
 import { ModeToggle } from "./DarkModeControl";
 const Header = () => {
     return (
-        <div className="flex items-center justify-between max-w-[1440px] mx-auto px-4 md:px-8 lg:px-12 py-4">
+        <div className="flex items-center justify-between max-w-[1440px] mx-auto px-4 md:px-8 lg:px-0">
             <div className="flex items-center gap-2">
                 <Image src={logo} className="h-16 w-16 md:h-28 md:w-28" alt="Auto Rapid" priority />
                 <h2 className="text-xl md:text-3xl lg:text-4xl font-semibold md:font-bold">AutoRapid</h2>
