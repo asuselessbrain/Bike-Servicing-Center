@@ -5,7 +5,7 @@ import React from 'react';
 const CommonLayout = ({ children }: { children: React.ReactNode }) => {
     return (
         <div>
-            <div className="fixed w-full shadow-md shadow-violet-100 pb-2">
+            <div className="fixed w-full shadow-md shadow-violet-100 pb-2 px-2">
                 <Header />
                 <NavBar />
             </div>
