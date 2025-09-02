@@ -1,7 +1,12 @@
+import Header from "@/components/shared/Header";
+
 const HomePage = () => {
     return (
         <div>
-            <h1>Home Page</h1>
+            <div className="">
+                <Header />
+            </div>
+
         </div>
     );
 };
