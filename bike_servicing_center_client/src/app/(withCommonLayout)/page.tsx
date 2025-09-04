@@ -1,5 +1,5 @@
-import ImageSlider from "@/components/ImageSlider";
-import OfferedService from "@/components/OfferedService";
+import ImageSlider from "@/components/home/ImageSlider";
+import OfferedService from "@/components/home/OfferedService";
 
 const HomePage = () => {
     return (
