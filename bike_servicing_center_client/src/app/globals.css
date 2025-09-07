@@ -131,3 +131,7 @@
 .clipRight {
   clip-path: polygon(13% 0, 100% 1%, 100% 100%, 0% 100%);
 }
+
+.clipWorking {
+  clip-path: polygon(80% 0, 100% 50%, 80% 100%, 0% 100%, 15% 50%, 0% 0%);
+}
