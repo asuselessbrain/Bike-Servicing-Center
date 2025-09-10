@@ -8,23 +8,23 @@ import { TiSocialFacebook, TiSocialInstagram, TiSocialLinkedin, TiSocialTwitter 
 const Footer = () => {
     return (
         <div className="w-full">
-            <div className="max-w-[1440px] mx-auto flex flex-col lg:flex-row items-center -mb-20">
+            <div className="max-w-[1440px] mx-auto flex flex-col lg:flex-row items-center -mb-20 text-white">
                 <div className="flex items-center gap-6 bg-gray-800 w-full py-12 px-6 flex-1">
-                    <FaLocationDot size={35} className="text-white" />
+                    <FaLocationDot size={35} />
                     <div>
                         <h6 className="text-[20px]">Dhaka, Bangladesh</h6>
                         <p>123 Bike Street, Motor Cityf</p>
                     </div>
                 </div>
                 <div className="flex items-center gap-6 bg-primary/90 py-12 w-full px-6 flex-1">
-                    <FaPhoneVolume size={35} className="text-white" />
+                    <FaPhoneVolume size={35} />
                     <div>
                         <h6 className="text-[20px]">+880 1234 567890</h6>
                         <p>Give us a call</p>
                     </div>
                 </div>
                 <div className="flex items-center gap-6 bg-primary py-12 px-6 w-full flex-1">
-                    <MdEmail size={35} className="text-white" />
+                    <MdEmail size={35} />
                     <div>
                         <h6 className="text-[20px]">support@autorepair.com</h6>
                         <p>24/7 online support</p>

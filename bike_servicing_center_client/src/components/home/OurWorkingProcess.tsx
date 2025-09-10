@@ -19,7 +19,7 @@ const OurWorkingProcess = () => {
                     <p className="text-gray-200 text-justify lg:text-sm xl:text-[16px]">Drop off your car or motorbike at our workshop at a convenient time for professional inspection and servicing.</p>
                     <h1 className="absolute text-9xl xl:right-20 lg:right-10 top-5 opacity-10">2</h1>
                 </div>
-                <div className="clipWorking  xl:py-20 py-6 sm:flex-1 bg-black/80 xl:px-24 lg:px-16 flex items-start flex-col justify-center text-white relative">
+                <div className="clipWorking  xl:py-20 py-6 sm:flex-1 bg-primary/80 xl:px-24 lg:px-16 flex items-start flex-col justify-center text-white relative">
                     <FaCarOn size={100} />
                     <h2 className="xl:text-3xl lg:text-xl font-semibold my-6">Get It Repaired</h2>
                     <p className="text-gray-200 text-justify lg:text-sm xl:text-[16px]">Our expert mechanics fix your vehicle efficiently using genuine parts, ensuring it runs smoothly and safely.</p>

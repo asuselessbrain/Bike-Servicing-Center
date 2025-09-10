@@ -65,7 +65,7 @@ const WhyChooseUse = () => {
                         </div>)
                     }
                 </div>
-                <div className="flex-1 hidden md:block relative w-full h-80 lg:h-[400px] rounded-lg overflow-hidden ">
+                <div className="flex-1 hidden lg:block relative w-full h-80 lg:h-[400px] rounded-lg overflow-hidden ">
                     <Image src="https://shorturl.at/SUTkf" alt="Mechanic Image" fill className="object-cover" />
                 </div>
             </div>
