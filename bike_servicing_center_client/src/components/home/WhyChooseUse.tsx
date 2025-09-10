@@ -50,7 +50,7 @@ const whyChooseUs = [
 
 const WhyChooseUse = () => {
     return (
-        <div className="max-w-[1440px] mx-auto  my-20 p-2 md:p0">
+        <div className="max-w-[1440px] mx-auto  my-20 px-4 sm:px-6 lg:px-8 2xl:px-0">
             <h2 className="text-2xl md:text-4xl lg:text-5xl italic">Why Choose Us</h2>
             <div className="h-1 mt-4 w-34 bg-primary"></div>
             <div className="md:flex items-center justify-between gap-6">

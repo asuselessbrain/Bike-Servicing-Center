@@ -3,7 +3,7 @@ import { Button } from "../ui/button";
 
 const Subscribe = () => {
     return (
-        <div className="relative h-72 my-20">
+        <div className="relative h-72 my-20 px-4 sm:px-6 lg:px-8 2xl:px-0">
             <div className="h-60 w-[55%] bg-primary absolute -translate-y-1/2 top-1/2 z-10 left-0 clipLeft">
 
             </div>

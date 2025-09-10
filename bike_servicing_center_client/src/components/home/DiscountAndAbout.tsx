@@ -16,7 +16,7 @@ const DiscountAndAbout = () => {
             <div className="h-[350px] w-[55%] bg-primary clipRight hidden lg:absolute right-0 top-1/2 -translate-y-1/2 text-white pl-40 lg:flex justify-center flex-col">
 
             </div>
-            <div className="relative max-w-[1440px] mx-auto flex flex-col lg:flex-row items-center justify-between h-full">
+            <div className="relative max-w-[1440px] mx-auto flex flex-col lg:flex-row items-center justify-between h-full px-4 sm:px-6 lg:px-8 2xl:px-0">
                 <div className="text-white flex flex-col items-start p-6 lg:p-0 relative mx-4 lg:mx-0">
                     <div className="absolute inset-0 lg:hidden bg-cover bg-center -z-10"
                         style={{

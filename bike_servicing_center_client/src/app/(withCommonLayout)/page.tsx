@@ -1,4 +1,5 @@
 import DiscountAndAbout from "@/components/home/DiscountAndAbout";
+import FrequentAskedQuestion from "@/components/home/FrequentAskedQuestion";
 import ImageSlider from "@/components/home/ImageSlider";
 import OfferedService from "@/components/home/OfferedService";
 import OurWorkingProcess from "@/components/home/OurWorkingProcess";
@@ -14,6 +15,7 @@ const HomePage = () => {
             <OurWorkingProcess />
             <OfferedService />
             <Subscribe />
+            <FrequentAskedQuestion />
         </div>
     );
 };
