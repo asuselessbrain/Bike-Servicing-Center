@@ -9,7 +9,7 @@ const Card = ({ service }: { service: TServices }) => {
             <div className="w-full h-64 relative overflow-hidden">
                 <Image src={service.image} alt={service.name} width={200} height={200} className="w-full rounded h-full group-hover:scale-105 duration-700" />
                 <div className="w-full h-full bg-gradient-to-l from-black/40 to-black/40 inset-0 absolute z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
-                <div className="absolute h-10 w-10 z-20 top-2 right-2 bg-primary rounded-full flex items-center justify-center text-white font-semibold text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-700">
+                <div className="absolute h-10 w-10 z-20 top-2 group-hover:right-2 bg-primary rounded-full flex items-center justify-center text-white font-semibold text-sm -right-50 transition-all duration-500 opacity-0 group-hover:opacity-100">
                     <p>-{service.discount}%</p>
                 </div>
             </div>
