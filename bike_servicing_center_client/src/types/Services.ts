@@ -3,7 +3,7 @@ export type TServices = {
     name: string,
     description: string,
     image: string,
-    discount: number,
+    discount?: number,
     price: string,
-    ratting: number
+    ratting?: number
 }
