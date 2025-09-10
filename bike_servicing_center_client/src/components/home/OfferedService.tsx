@@ -101,7 +101,7 @@ const OfferedService = () => {
     return (
         <div className="max-w-[1440px] mx-auto w-full my-20">
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-semibold flex items-center justify-center italic">Services Offered</h1>
-            <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4 px-2 md:px-0 mt-20 mb-10">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 px-2 md:px-0 mt-20 mb-10">
                 {
                     services.slice(0, 8).map((service, index) => <div key={index} className="group rounded-xl overflow-hidden border-2">
                         <div className="w-full h-60 relative overflow-hidden">
@@ -113,7 +113,7 @@ const OfferedService = () => {
                         </div>
                         <div className="p-4">
                             <h3 className="group-hover:underline duration-700 text-2xl font-semibold mb-4 text-primary">{service.name.length > 20 ? service.name.slice(0, 20) + "..." : service.name}</h3>
-                            <p className="text-gray-500 dark:text-gray-400 mb-2">{service.description.length > 70 ? service.description.slice(0, 80) + "..." : service.description}</p>
+                            <p className="text-gray-500 dark:text-gray-400 mb-2">{service.description.length > 75 ? service.description.slice(0, 75) + "..." : service.description}</p>
                             <h4 className="text-xl font-semibold mb-2 text-red-600">{service.price}</h4>
                             <h4 className="flex items-center gap-2"><FaStarHalfAlt /> {service.rating}</h4>
                             <Button className="mt-4 rounded cursor-pointer">View Details</Button>

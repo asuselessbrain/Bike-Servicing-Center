@@ -125,11 +125,11 @@
 }
 
 .clipLeft {
-  clip-path: polygon(0 0, 100% 1%, 86% 100%, 0% 100%);
+  clip-path: polygon(0 0, 100% 0%, 85% 100%, 0% 100%);
 }
 
 .clipRight {
-  clip-path: polygon(13% 0, 100% 1%, 100% 100%, 0% 100%);
+  clip-path: polygon(15% 0, 100% 0%, 100% 100%, 0% 100%);
 }
 
 .clipWorking {
