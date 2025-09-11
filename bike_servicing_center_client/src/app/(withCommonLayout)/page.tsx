@@ -4,6 +4,7 @@ import ImageSlider from "@/components/home/ImageSlider";
 import OfferedService from "@/components/home/OfferedService";
 import OurWorkingProcess from "@/components/home/OurWorkingProcess";
 import PartsAndAccessories from "@/components/home/Parts&Accessories";
+import Stats from "@/components/home/Stats";
 import Subscribe from "@/components/home/Subcribe";
 import WhyChooseUse from "@/components/home/WhyChooseUse";
 import Partners from "@/components/shared/Partners";
@@ -13,6 +14,7 @@ const HomePage = () => {
         <div>
             <ImageSlider />
             <WhyChooseUse />
+            <Stats />
             <PartsAndAccessories />
             <DiscountAndAbout />
             <OurWorkingProcess />
