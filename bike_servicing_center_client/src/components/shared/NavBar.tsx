@@ -2,6 +2,7 @@
 import { useState } from "react";
 import { Button } from "../ui/button";
 import { IoMenuSharp } from "react-icons/io5";
+import Link from "next/link";
 
 const NavBar = () => {
     const [toggle, setToggle] = useState(false);
@@ -12,14 +13,18 @@ const NavBar = () => {
     return (
         <div className="text-xl font-semibold max-w-[1440px] mx-auto flex items-center justify-between px-4 lg:px-0">
             <ul className="hidden lg:flex items-center list-none gap-6">
-                <li className="relative cursor-pointer group p-2 hover:text-primary duration-300">
-                    Home
-                    <span className="absolute left-0 bottom-0 w-0 h-[3px] bg-primary transition-all duration-300 group-hover:w-full"></span>
-                </li>
-                <li className="relative cursor-pointer hover:text-primary duration-300 group p-2">
-                    Services
-                    <span className="absolute left-0 bottom-0 w-0 h-[3px] bg-primary transition-all duration-300 group-hover:w-full"></span>
-                </li>
+                <Link href="/">
+                    <li className="relative cursor-pointer group p-2 hover:text-primary duration-300">
+                        Home
+                        <span className="absolute left-0 bottom-0 w-0 h-[3px] bg-primary transition-all duration-300 group-hover:w-full"></span>
+                    </li>
+                </Link>
+                <Link href="/services">
+                    <li className="relative cursor-pointer hover:text-primary duration-300 group p-2">
+                        Services
+                        <span className="absolute left-0 bottom-0 w-0 h-[3px] bg-primary transition-all duration-300 group-hover:w-full"></span>
+                    </li>
+                </Link>
                 <li className="relative group cursor-pointer hover:text-primary duration-300 group p-2">
                     Book Service
                     <span className="absolute left-0 bottom-0 w-0 h-[3px] bg-primary transition-all duration-300 group-hover:w-full"></span>

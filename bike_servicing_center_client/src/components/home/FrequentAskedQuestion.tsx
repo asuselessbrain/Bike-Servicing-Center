@@ -58,7 +58,7 @@ const FrequentAskedQuestion = () => {
                                             onClick={() =>
                                                 setOpenIndex(openIndex === index ? null : index)
                                             }
-                                            className="flex w-full items-center justify-between text-left text-lg font-medium text-gray-700 hover:text-indigo-600 transition"
+                                            className="flex w-full items-center justify-between text-left text-lg font-medium text-gray-700 dark:text-gray-200 hover:text-indigo-600 transition"
                                         >
                                             {faq.question}
                                             <svg
@@ -80,7 +80,7 @@ const FrequentAskedQuestion = () => {
 
                                         {/* Answer */}
                                         {openIndex === index && (
-                                            <div className="mt-3 text-gray-600 text-base leading-relaxed">
+                                            <div className="mt-3 text-gray-600 dark:text-gray-300 text-base leading-relaxed">
                                                 {faq.answer}
                                             </div>
                                         )}
