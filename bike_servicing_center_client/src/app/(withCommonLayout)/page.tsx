@@ -6,6 +6,7 @@ import OurWorkingProcess from "@/components/home/OurWorkingProcess";
 import PartsAndAccessories from "@/components/home/Parts&Accessories";
 import Subscribe from "@/components/home/Subcribe";
 import WhyChooseUse from "@/components/home/WhyChooseUse";
+import Partners from "@/components/shared/Partners";
 
 const HomePage = () => {
     return (
@@ -18,6 +19,7 @@ const HomePage = () => {
             <OfferedService />
             <Subscribe />
             <FrequentAskedQuestion />
+            <Partners />
         </div>
     );
 };

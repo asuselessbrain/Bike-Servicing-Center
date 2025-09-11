@@ -124,6 +124,9 @@
   body {
     @apply bg-background text-foreground;
   }
+  .animate-infinite-scroll {
+    animation: infinite-animation 20s linear infinite;
+  }
 }
 
 .clipLeft {
@@ -136,4 +139,13 @@
 
 .clipWorking {
   clip-path: polygon(80% 0, 100% 50%, 80% 100%, 0% 100%, 15% 50%, 0% 0%);
+}
+
+@keyframes infinite-animation {
+  0%{
+    transform: translateX(0);
+  }
+  100%{
+    transform: translateX(-50%);
+  }
 }
