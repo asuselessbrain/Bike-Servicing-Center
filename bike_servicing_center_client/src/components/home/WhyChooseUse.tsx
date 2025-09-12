@@ -53,7 +53,7 @@ const WhyChooseUse = () => {
         <div className="max-w-[1440px] mx-auto  my-20 px-4 sm:px-6 lg:px-8 2xl:px-0">
             <h2 className="text-2xl md:text-4xl lg:text-5xl italic">Why Choose Us</h2>
             <div className="h-1 mt-4 w-34 bg-primary"></div>
-            <div className="md:flex items-center justify-between gap-6">
+            <div className="md:flex items-center justify-between gap-6 mt-10">
                 <div className="grid grid-cols-1 md:grid-cols-2 flex-1 gap-6 text-justify">
                     {
                         whyChooseUs.slice(0, 4).map((item, index) => <div key={index} className="flex items-start gap-4">
@@ -65,7 +65,7 @@ const WhyChooseUse = () => {
                         </div>)
                     }
                 </div>
-                <div className="flex-1 hidden lg:block relative w-full h-80 lg:h-[400px] rounded-lg overflow-hidden ">
+                <div className="flex-1 hidden xl:block relative w-full h-80 xl:h-[400px] rounded-lg overflow-hidden ">
                     <Image src="https://shorturl.at/SUTkf" alt="Mechanic Image" fill className="object-cover" />
                 </div>
             </div>

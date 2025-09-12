@@ -12,22 +12,24 @@ const Partners = () => {
     ]
 
     return (
-        <div className="max-w-[1440px] mx-auto overflow-hidden my-20">
-            <h2 className="uppercase text-2xl md:text-4xl lg:text-4xl font-semibold italic">Our Partner</h2>
-            <div className="h-1 mt-4 w-28 bg-primary"></div>
+        <div className="max-w-[1440px] mx-auto my-20">
+            <div className="mx-6 md:mx-10 2xl:mx-0 overflow-hidden">
+                <h2 className="uppercase text-2xl md:text-4xl lg:text-4xl font-semibold italic">Our Partner</h2>
+                <div className="h-1 mt-4 w-28 bg-primary"></div>
 
-            <div className="flex items-center gap-6 h-28 mt-10 animate-infinite-scroll w-max">
-                {[...ourPartners, ...ourPartners].map((partner, index) => (
-                    <div key={index} className="border-2 border-gray-300 rounded h-full flex items-center justify-center dark:bg-white">
-                        <Image
-                            src={partner.image}
-                            alt={partner.name}
-                            width={200}
-                            height={200}
-                            className="object-contain h-full"
-                        />
-                    </div>
-                ))}
+                <div className="flex items-center gap-6 h-28 mt-10 animate-infinite-scroll w-max">
+                    {[...ourPartners, ...ourPartners].map((partner, index) => (
+                        <div key={index} className="border-2 border-gray-300 rounded h-full flex items-center justify-center dark:bg-white">
+                            <Image
+                                src={partner.image}
+                                alt={partner.name}
+                                width={200}
+                                height={200}
+                                className="object-contain h-full"
+                            />
+                        </div>
+                    ))}
+                </div>
             </div>
         </div>
 
