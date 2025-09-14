@@ -1,4 +1,5 @@
 import { FaCheckCircle, FaClock, FaSmile, FaWrench } from "react-icons/fa";
+import Counter from "../shared/Counter";
 
 const Stats = () => {
     return (
@@ -7,7 +8,8 @@ const Stats = () => {
                 <div className="border-2 border-white rounded py-6 px-10 flex items-center flex-col  gap-6" >
                     <div className="flex items-center gap-2">
                         <FaSmile size={40} />
-                        <p className="text-5xl">{(12050).toLocaleString()}+</p>
+                        <Counter target={12050} duration={2000} />
+                        {/* <p className="text-5xl">{(12050).toLocaleString()}+</p> */}
                     </div>
                     <h3 className="text-2xl">Happy Clients</h3>
 
