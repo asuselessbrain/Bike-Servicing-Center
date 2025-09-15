@@ -1,4 +1,5 @@
 import Card from "../shared/Card";
+import ScrambleText from "../shared/TextScramble";
 import { Button } from "../ui/button";
 
 const PartsAndAccessories = () => {
@@ -100,8 +101,8 @@ const PartsAndAccessories = () => {
     return (
         <section className="max-w-[1440px] mx-auto my-20">
             <div className="text-center my-6 space-y-6">
-                <h1 className="text-3xl md:text-4xl lg:text-5xl flex items-center justify-center italic">Genuine Spare Parts & Accessories</h1>
-                <p className="text-gray-700 dark:text-gray-200">High-quality parts and accessories to keep your bike safe, smooth, and performing at its best – all in one place!</p>
+                <h1 className="text-3xl md:text-4xl lg:text-5xl flex items-center justify-center italic"><ScrambleText text="Genuine Spare Parts & Accessories" /></h1>
+                <p className="text-gray-700 dark:text-gray-200"><ScrambleText text="High-quality parts and accessories to keep your bike safe, smooth, and performing at its best – all in one place!" /></p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 px-2 md:px-0 mt-20 mb-10">
                 {

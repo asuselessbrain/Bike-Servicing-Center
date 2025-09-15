@@ -1,4 +1,5 @@
 import Image from "next/image";
+import ScrambleText from "./TextScramble";
 
 const Partners = () => {
 
@@ -14,7 +15,7 @@ const Partners = () => {
     return (
         <div className="max-w-[1440px] mx-auto my-20">
             <div className="mx-6 md:mx-10 2xl:mx-0 overflow-hidden">
-                <h2 className="uppercase text-2xl md:text-4xl lg:text-4xl font-semibold italic">Our Partner</h2>
+                <h2 className="uppercase text-2xl md:text-4xl lg:text-4xl font-semibold italic"><ScrambleText text="Our Partner" /></h2>
                 <div className="h-1 mt-4 w-28 bg-primary"></div>
 
                 <div className="flex items-center gap-6 h-28 mt-10 animate-infinite-scroll w-max">

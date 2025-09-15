@@ -1,10 +1,11 @@
 import { FaCarOn, FaCarRear } from "react-icons/fa6";
 import { TbDeviceMobileMessage } from "react-icons/tb";
+import ScrambleText from "../shared/TextScramble";
 
 const OurWorkingProcess = () => {
     return (
         <div className="max-w-[1440px] mx-auto overflow-hidden px-4 sm:px-6 lg:px-8 2xl:px-0">
-            <h2 className="text-2xl md:text-4xl lg:text-5xl italic">Our Working Process</h2>
+            <h2 className="text-2xl md:text-4xl lg:text-5xl italic"><ScrambleText text="Our Working Process" /></h2>
             <div className="h-1 mt-2 w-34 bg-primary mb-10"></div>
             <div className="hidden lg:flex flex-row items-center justify-between space-y-4 sm:space-y-0 sm:space-x-4 lg:mx-4">
                 <div className="clipWorking  xl:py-20 py-6 sm:flex-1 bg-black/80 xl:px-24 lg:px-16 flex items-start flex-col justify-center text-white relative">

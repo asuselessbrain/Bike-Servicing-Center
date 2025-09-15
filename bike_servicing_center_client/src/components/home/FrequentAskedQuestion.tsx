@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { useState } from "react";
+import ScrambleText from "../shared/TextScramble";
 
 const faqs = [
     {
@@ -33,7 +34,7 @@ const FrequentAskedQuestion = () => {
         <section className="my-20">
             <div className="mx-auto max-w-[1440px] px-4 sm:px-6 lg:px-8 2xl:px-0">
                 <div className="my-6">
-                    <h3 className="text-2xl md:text-4xl lg:text-4xl font-semibold italic">Looking for answers?</h3>
+                    <h3 className="text-2xl md:text-4xl lg:text-4xl font-semibold italic"><ScrambleText text="Looking for answers?" /></h3>
                     <div className="h-1 mt-2 w-34 bg-primary"></div>
                 </div>
                 <div className="flex flex-col justify-center items-center gap-x-16 gap-y-10 lg:flex-row lg:justify-between">

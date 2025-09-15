@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { FaUserCog, FaDollarSign, FaClock, FaTools, FaShieldAlt, FaCogs, FaPhoneAlt } from "react-icons/fa";
+import ScrambleText from "../shared/TextScramble";
 
 const whyChooseUs = [
     {
@@ -51,7 +52,7 @@ const whyChooseUs = [
 const WhyChooseUse = () => {
     return (
         <div className="max-w-[1440px] mx-auto  my-20 px-4 sm:px-6 lg:px-8 2xl:px-0">
-            <h2 className="text-2xl md:text-4xl lg:text-5xl italic">Why Choose Us</h2>
+            <h2 className="text-2xl md:text-4xl lg:text-5xl italic"><ScrambleText text="Why Choose Us" /></h2>
             <div className="h-1 mt-4 w-34 bg-primary"></div>
             <div className="md:flex items-center justify-between gap-6 mt-10">
                 <div className="grid grid-cols-1 md:grid-cols-2 flex-1 gap-6 text-justify">

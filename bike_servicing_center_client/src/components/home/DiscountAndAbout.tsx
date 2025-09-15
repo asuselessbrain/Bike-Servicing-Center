@@ -1,3 +1,4 @@
+import ScrambleText from "../shared/TextScramble";
 import { Button } from "../ui/button";
 
 const DiscountAndAbout = () => {
@@ -18,15 +19,15 @@ const DiscountAndAbout = () => {
             </div>
             <div className="relative max-w-[1440px] mx-auto flex flex-col lg:flex-row items-center justify-between h-full px-4 sm:px-6 lg:px-8 2xl:px-0">
                 <div className="text-white flex flex-col items-start p-6 lg:p-0 relative mx-4 lg:mx-0 w-full py-10 px-4 lg:bg-none bg-cover bg-center bg-no-repeat [background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('https://trainingtale.org/wp-content/uploads/2025/02/Motorcycle-Maintenance-Course.jpg')]">
-                    <p className="text-xl italic">Come before 21st Feb</p>
-                    <h2 className="text-2xl md:text-4xl lg:text-4xl font-semibold mt-4 italic">Get Upto 30% Rewards</h2>
+                    <p className="text-xl italic"><ScrambleText text="Come before 21st Feb" /></p>
+                    <h2 className="text-2xl md:text-4xl lg:text-4xl font-semibold mt-4 italic"><ScrambleText text="Get Upto 30% Rewards" /></h2>
                     <div className="h-1 mt-2 w-34 bg-primary"></div>
                     <p className="lg:max-w-1/2 text-gray-200 mt-4">Auto Painting & Collision Repair Shop. We help you turn the car you drive back into the car you love!</p>
                     <Button className="rounded uppercase mt-6 cursor-pointer">Claim Reward</Button>
                 </div>
 
                 <div className="text-white p-6 lg:p-0 lg:pl-10 lg:max-w-[50%] relative mx-4 lg:mx-0 bg-primary lg:bg-transparent w-full py-10 px-4">
-                    <h3 className="text-2xl md:text-4xl lg:text-4xl font-semibold mt-4 italic">About AutoRepair</h3>
+                    <h3 className="text-2xl md:text-4xl lg:text-4xl font-semibold mt-4 italic"><ScrambleText text="About AutoRepair" /></h3>
                     <div className="h-1 mt-2 w-34 bg-white"></div>
                     <p className="text-gray-200 mt-4 text-justify">AutoRepair is your reliable partner for professional motorbike and vehicle servicing. We keep your ride safe, smooth, and long-lasting.</p>
                     <ul className="mt-6 list-disc list-inside space-y-4">
