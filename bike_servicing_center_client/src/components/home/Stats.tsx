@@ -8,8 +8,7 @@ const Stats = () => {
                 <div className="border-2 border-white rounded py-6 px-10 flex items-center flex-col  gap-6" >
                     <div className="flex items-center gap-2">
                         <FaSmile size={40} />
-                        <Counter target={12050} duration={2000} />
-                        {/* <p className="text-5xl">{(12050).toLocaleString()}+</p> */}
+                        <Counter target={12050} />
                     </div>
                     <h3 className="text-2xl">Happy Clients</h3>
 
@@ -17,7 +16,7 @@ const Stats = () => {
                 <div className="border-2 border-white rounded py-6 px-10 flex items-center flex-col  gap-6" >
                     <div className="flex items-center gap-2">
                         <FaWrench size={40} />
-                        <p className="text-5xl">{(400).toLocaleString()}+</p>
+                        <Counter target={400} />
                     </div>
                     <h3 className="text-2xl">Expert Mechanics</h3>
 
@@ -25,7 +24,7 @@ const Stats = () => {
                 <div className="border-2 border-white rounded py-6 px-10 flex items-center flex-col  gap-6" >
                     <div className="flex items-center gap-2">
                         <FaCheckCircle size={40} />
-                        <p className="text-5xl">{(13015).toLocaleString()}+</p>
+                        <Counter target={13015} />
                     </div>
                     <h3 className="text-2xl">Services Completed</h3>
 
@@ -33,7 +32,7 @@ const Stats = () => {
                 <div className="border-2 border-white rounded py-6 px-10 flex items-center flex-col  gap-6" >
                     <div className="flex items-center gap-2">
                         <FaClock size={40} />
-                        <p className="text-5xl">{(9).toLocaleString()}+</p>
+                        <Counter target={9} />
                     </div>
                     <h3 className="text-2xl">Years of Experience</h3>
 

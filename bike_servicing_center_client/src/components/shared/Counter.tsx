@@ -1,20 +1,19 @@
 "use client"
 
-import { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
+import { useEffect, useRef, useState } from "react";
 
-const Counter = ({ target, duration = 2500 }: { target: number, duration: number }) => {
-
+const Counter = ({ target, duration = 2000 }: { target: number, duration?: number }) => {
     const [count, setCount] = useState(0);
-    const [isVisible, setIsVisible] = useState(false);
-    const ref = useRef<HTMLSpanElement | null>(null);
+    const [isVisible, setIsVisible] = useState(false)
+    const ref = useRef<HTMLSpanElement | null>(null)
 
     useEffect(() => {
-        const observer = new IntersectionObserver(entries => {
+        const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
-                    setIsVisible(true);
-                    observer.disconnect();
+                    setIsVisible(true)
+                    observer.disconnect()
                 }
             })
         }, { threshold: 0.5 })
@@ -27,32 +26,25 @@ const Counter = ({ target, duration = 2500 }: { target: number, duration: number
     }, [])
 
     useEffect(() => {
-        if (!isVisible) return;
+        if (!isVisible) return
+
         let start = 0;
 
-        const increment = target / (duration / 16);
+        const increment = target / (duration / 16)
 
-        const timer = setInterval(() => {
-            start += increment;
-
+        const time = setInterval(() => {
+            start += increment
             if (start >= target) {
                 start = target;
-                clearInterval(timer);
+                clearInterval(time)
             }
-
-            setCount(Math.floor(start));
+            setCount(Math.floor(start))
         }, 16)
-        return () => clearInterval(timer)
 
-    }, [target, duration, isVisible]);
+        return () => clearInterval(time)
+    }, [isVisible, target, duration, setCount])
     return (
-        <motion.span
-            ref={ref}
-            className="text-4xl sm:text-5xl"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.5 }}
-        >
+        <motion.span ref={ref} initial={{ opacity: 0 }} animate={{ opacity: isVisible ? 1 : 0 }} transition={{ duration: 0.5 }} className="text-4xl font-semibold">
             {count.toLocaleString()} +
         </motion.span>
     );
