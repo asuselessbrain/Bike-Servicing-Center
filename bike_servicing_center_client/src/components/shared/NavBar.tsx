@@ -25,10 +25,12 @@ const NavBar = () => {
                         <span className="absolute left-0 bottom-0 w-0 h-[3px] bg-primary transition-all duration-300 group-hover:w-full"></span>
                     </li>
                 </Link>
-                <li className="relative group cursor-pointer hover:text-primary duration-300 group p-2">
-                    Book Service
-                    <span className="absolute left-0 bottom-0 w-0 h-[3px] bg-primary transition-all duration-300 group-hover:w-full"></span>
-                </li>
+                <Link href="/appointment">
+                    <li className="relative group cursor-pointer hover:text-primary duration-300 group p-2">
+                        Book Service
+                        <span className="absolute left-0 bottom-0 w-0 h-[3px] bg-primary transition-all duration-300 group-hover:w-full"></span>
+                    </li>
+                </Link>
                 <li className="relative group cursor-pointer hover:text-primary duration-300 group p-2">
                     Shop
                     <span className="absolute left-0 bottom-0 w-0 h-[3px] bg-primary transition-all duration-300 group-hover:w-full"></span>
