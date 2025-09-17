@@ -45,18 +45,12 @@ const NavBar = () => {
                         <span className="absolute left-0 bottom-0 w-0 h-[3px] bg-primary transition-all duration-300 group-hover:w-full"></span>
                     </li>
                 </Link>
-                <li className="relative group cursor-pointer hover:text-primary group duration-300 p-2">
-                    About Us
-                    <span className="absolute left-0 bottom-0 w-0 h-[3px] bg-primary transition-all duration-300 group-hover:w-full"></span>
-                </li>
-                <li className="relative group cursor-pointer hover:text-primary group duration-300 p-2">
-                    Gallery
-                    <span className="absolute left-0 bottom-0 w-0 h-[3px] bg-primary transition-all duration-300 group-hover:w-full"></span>
-                </li>
-                <li className="relative group cursor-pointer hover:text-primary group duration-300 p-2">
-                    FAQ
-                    <span className="absolute left-0 bottom-0 w-0 h-[3px] bg-primary transition-all duration-300 group-hover:w-full"></span>
-                </li>
+                <Link href="/about">
+                    <li className="relative group cursor-pointer hover:text-primary group duration-300 p-2">
+                        About Us
+                        <span className="absolute left-0 bottom-0 w-0 h-[3px] bg-primary transition-all duration-300 group-hover:w-full"></span>
+                    </li>
+                </Link>
                 <Link href="/contact">
                     <li className="relative group cursor-pointer hover:text-primary group duration-300 p-2">
                         Contact
