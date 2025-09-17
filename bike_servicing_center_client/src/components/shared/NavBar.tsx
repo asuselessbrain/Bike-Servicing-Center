@@ -39,10 +39,12 @@ const NavBar = () => {
                     Reviews
                     <span className="absolute left-0 bottom-0 w-0 h-[3px] bg-primary transition-all duration-300 group-hover:w-full"></span>
                 </li>
-                <li className="relative group cursor-pointer hover:text-primary group duration-300 p-2">
-                    Dashboard
-                    <span className="absolute left-0 bottom-0 w-0 h-[3px] bg-primary transition-all duration-300 group-hover:w-full"></span>
-                </li>
+                <Link href="user">
+                    <li className="relative group cursor-pointer hover:text-primary group duration-300 p-2">
+                        Dashboard
+                        <span className="absolute left-0 bottom-0 w-0 h-[3px] bg-primary transition-all duration-300 group-hover:w-full"></span>
+                    </li>
+                </Link>
                 <li className="relative group cursor-pointer hover:text-primary group duration-300 p-2">
                     About Us
                     <span className="absolute left-0 bottom-0 w-0 h-[3px] bg-primary transition-all duration-300 group-hover:w-full"></span>
@@ -55,10 +57,12 @@ const NavBar = () => {
                     FAQ
                     <span className="absolute left-0 bottom-0 w-0 h-[3px] bg-primary transition-all duration-300 group-hover:w-full"></span>
                 </li>
-                <li className="relative group cursor-pointer hover:text-primary group duration-300 p-2">
-                    Contact
-                    <span className="absolute left-0 bottom-0 w-0 h-[3px] bg-primary transition-all duration-300 group-hover:w-full"></span>
-                </li>
+                <Link href="/contact">
+                    <li className="relative group cursor-pointer hover:text-primary group duration-300 p-2">
+                        Contact
+                        <span className="absolute left-0 bottom-0 w-0 h-[3px] bg-primary transition-all duration-300 group-hover:w-full"></span>
+                    </li>
+                </Link>
             </ul>
             <IoMenuSharp onClick={handleToggle} className="block lg:hidden" size={30} />
             <ul className={`list-none absolute transition-all duration-500 top-24 ${toggle ? "left-0" : "-left-full"} h-screen bg-gray-50 dark:bg-primary z-10 w-1/2`}>

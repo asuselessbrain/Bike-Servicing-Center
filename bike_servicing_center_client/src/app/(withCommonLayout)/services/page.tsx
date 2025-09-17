@@ -3,14 +3,12 @@ import Card2 from "../../../components/shared/Card2";
 import Pagination from '@mui/material/Pagination';
 import Searching from "@/components/services/Searching";
 import Sorting from "@/components/services/Sorting";
-import { Filtering } from "@/components/services/Filtering";
+import PageHeader from "@/components/shared/PageHeader";
 
 const Services = () => {
     return (
         <div>
-            <div className="h-60 bg-cover bg-fixed  bg-no-repeat bg-center [background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url('https://res.cloudinary.com/dwduymu1l/image/upload/v1757640370/Hero-Motorcycle-Mechanics-1920x900_bbyrza.jpg')]">
-                <h2 className="uppercase text-5xl font-semibold text-white flex items-center justify-center h-full">Services</h2>
-            </div>
+            <PageHeader text="Services" />
             <div className="max-w-[1440px] mx-auto my-10">
                 <div className="flex flex-col lg:flex-row items-center justify-between gap-10 mx-6 lg:mx-0">
                     

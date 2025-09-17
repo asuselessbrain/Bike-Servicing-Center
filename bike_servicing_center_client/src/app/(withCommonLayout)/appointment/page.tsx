@@ -1,11 +1,11 @@
+import PageHeader from "@/components/shared/PageHeader";
 import Image from "next/image";
 
 const AppointmentPage = () => {
+
     return (
         <div>
-            <div className="h-60 bg-cover bg-fixed  bg-no-repeat bg-center [background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url('https://res.cloudinary.com/dwduymu1l/image/upload/v1757939769/mechanic-using-a-hex-key-or-allen-wrench-to-remove-motorcycle-rear-hydraulic-brake-pump-working-in-garage-maintenance-and-repair-motorcycle-concept-selective-focus-photo_yyaxpp.jpg')]">
-                <h2 className="uppercase text-5xl font-semibold text-white flex items-center justify-center h-full">Appointment</h2>
-            </div>
+            <PageHeader text="Appointment" />
             <div className="flex flex-col md:flex-row items-center justify-between gap-10 max-w-[1440px] mx-auto my-20 px-4 2xl:px-0">
                 <Image src="https://res.cloudinary.com/dwduymu1l/image/upload/v1757942459/appoinment-man-bg_wx4j5z.png" className="flex-1 rounded hidden lg:block" alt="bike servicing man" width={200} height={200} />
                 <div className="flex-1 text-center">
