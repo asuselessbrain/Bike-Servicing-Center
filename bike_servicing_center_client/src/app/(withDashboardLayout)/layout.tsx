@@ -1,21 +1,12 @@
 import { AppSidebar } from "@/components/app-sidebar"
-import { SiteHeader } from "@/components/site-header";
-import {
-    Breadcrumb,
-    BreadcrumbItem,
-    BreadcrumbLink,
-    BreadcrumbList,
-    BreadcrumbPage,
-    BreadcrumbSeparator,
-} from "@/components/ui/breadcrumb"
 import { Button } from "@/components/ui/button";
-import { Separator } from "@/components/ui/separator"
 import {
     SidebarInset,
     SidebarProvider,
     SidebarTrigger,
 } from "@/components/ui/sidebar"
 import { Home, LogOut } from "lucide-react";
+import Link from "next/link";
 
 const DashboardLayout = ({ children }: { children: React.ReactNode }) => {
     return (
@@ -29,7 +20,7 @@ const DashboardLayout = ({ children }: { children: React.ReactNode }) => {
                             <h2 className="text-xl font-semibold hidden md:block">AutoRapid</h2>
                         </div>
                         <div className="flex items-center gap-4">
-                            <Button variant="outline" className="rounded cursor-pointer"><Home />Home</Button>
+                            <Link href="/"><Button variant="outline" className="rounded cursor-pointer"><Home />Home</Button></Link>
                             <Button className="rounded cursor-pointer"><LogOut />LogOut</Button>
                         </div>
                     </div>
